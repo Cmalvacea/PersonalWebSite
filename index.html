@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malvacea</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/Styles.css">
+
+    <!-- Fonts -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    </style>
+        
+
+</head>
+<body>
+    <nav>
+        <div class="DarkBtn">
+            <a href="#" is="ColorSwitch">Christopher</a>
+        </div>
+        <div class="Nav-Guide">
+            <a href="#" id="HomeBtn" onclick="PageSwap(HomeSec, AboutSec, SkillSec)">Home</a>
+            <a href="#" id="AboutBtn">About Me</a>
+            <a href="#" id="SkillBtn">Skills</a>
+            <a href="#" id="ContactBtn">Contact</a>
+        </div>
+        <div class="WorkNets">
+            <a href="https://github.com/Cmalvacea" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://t.me/Nameistopher" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.linkedin.com/in/christopher-malvacea-54458a208" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </nav>
+
+
+    <div class="Super-container">
+
+        <div class="HomeSection" id="HomeSec">
+
+            <div class="Profile">
+                <div class="ProfilePic">
+                    <img src="images/ProfilePic.png" alt="" srcset="">
+                </div>
+                <h1>Christopher Malvacea</h1>
+                <p>The Website you need in the moment you need it</p>
+                <div>
+                    <a href="#" id="AboutBtn2"><button>Know More</button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="AboutSection" id="AboutSec">
+            <div class="AboutContent">
+                <p>Hello there! As you can see my name is Christopher Malvacea, i am a web developer, specifically with the MERN stack. I've been learning this really cool profession since a months ago. When it comes to make code my philosophy is always make readable and reliable code, always following the good practices in order to make the software scalable and easily adapted to any of your needs. Check my portfolio on the next page oh and by the way, there in the navegation bar are some of the places where you can contact me</p>
+                <div class="Picture"><img src="images/Picture1.jpg" alt="" srcset=""></div>
+                <div class="Picture" id="PcPic"><img src="images/Picture2.jpg" alt="" srcset=""></div>
+                <p>In my portfolio you will find some of my personal projects and some programs that i made just for practice. I'm currently studying big data so as you can guess i really like to make databases and software to store information, however my knowledge is not limited to that, pick a project from any of the sections in the Skill tab and you will understand what do i mean. There is a lot to say but i prefer to act inmediatly, if you like my portfolio, please feel free to contact me, i'll really appreciate it</p>
+                <div class="Picture" id="MobilePic"><img src="images/Picture2.jpg" alt="" srcset=""></div>
+            </div>
+        </div>
+
+        <div class="SkillsPortSection" id="SkillSec">
+            <div class="SP-Container">
+
+                <div class="Skill-list">
+                    <h2>Skills</h2>
+                    <div class="Skill-sublist">
+                        <div>
+                            <ion-icon name="code-slash-outline"></ion-icon>
+                            <a href="#FrontendSec">Front-End</a>
+                        </div>
+                        <div>
+                            <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                            <a href="#BackendSec">Back-End</a>
+                        </div>
+                        <div>
+                            <ion-icon name="server-outline"></ion-icon>
+                            <a href="#DatabaseSec">Database</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="Portfolio-container" id="FrontendSec">
+                    <h2>Front-End projects</h2>
+                    <div class="Portfolio-list">
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Portfolio-container" id="BackendSec">
+                    <h2>Back-end projects</h2>
+                    <div class="Portfolio-list">
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Portfolio-container" id="DatabaseSec">
+                    <h2>Database projects</h2>
+                    <div class="Portfolio-list">
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="ContactSec" id="ContactSec">
+            <div class="ContactContent">
+                <a href="https://github.com/Cmalvacea" target="_blank"><ion-icon name="logo-github"></ion-icon>GitHub</a>
+                <a href="https://t.me/Nameistopher" target="_blank"><i class="fab fa-telegram"></i>Telegram</a>
+                <a href="https://www.linkedin.com/in/christopher-malvacea-54458a208" target="_blank"><ion-icon name="logo-linkedin"></ion-icon>Linkedin</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/6ea9739295.js" crossorigin="anonymous"></script>
+    <script>
+
+
+        function PageReader(arg1, arg2, arg3, arg4, arg5) {
+            arg1.addEventListener('click', () => {
+                arg2.style.display = 'block'
+                arg3.style.display = 'none'
+                arg4.style.display = 'none'
+                arg5.style.display = 'none'
+            })
+        }
+
+        PageReader(HomeBtn, HomeSec, AboutSec, SkillSec, ContactSec)
+        PageReader(AboutBtn, AboutSec, ContactSec, HomeSec, SkillSec)
+        PageReader(AboutBtn2, AboutSec, ContactSec, HomeSec, SkillSec)
+        PageReader(SkillBtn, SkillSec, AboutSec, ContactSec, HomeSec)
+        PageReader(ContactBtn, ContactSec, HomeSec, AboutSec, SkillSec)
+    </script>
+</body>
+</html>
