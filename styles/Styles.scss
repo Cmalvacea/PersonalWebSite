@@ -216,8 +216,12 @@ nav {
 
 .Portfolio-list {
     div {
-        border: 1px solid black;
-        height: 200px;
+        height: 150px;
+
+        img {
+            width: 100%;
+            height: 150px;
+        }
     }
 }
 
