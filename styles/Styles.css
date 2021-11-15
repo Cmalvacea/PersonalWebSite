@@ -121,21 +121,27 @@ nav ion-icon, nav i {
   font-weight: 800;
 }
 
-.AboutContent .Picture {
-  margin: auto;
-  width: 350;
-  height: 350px;
+.AboutSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding-bottom: 200px;
 }
 
-.AboutContent img {
+.AboutSection h2 {
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.AboutSection img {
   width: 100%;
-  height: 100%;
   border-radius: 10px;
+  margin-top: 5%;
 }
 
 .AboutSection {
   display: none;
-  padding-bottom: 200px;
 }
 
 /* Skills and Portfolio */
@@ -150,47 +156,47 @@ nav ion-icon, nav i {
 }
 
 .Skill-list {
+  width: 90%;
+  margin: auto;
+}
+
+.Skill-list h2 {
   text-align: center;
 }
 
 .Skill-sublist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 6%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  gap: 55px;
+  margin-top: 5%;
 }
 
-.Skill-sublist div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 20px;
+.Skill-sublist .Skill-Details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
 }
 
-.Skill-sublist a {
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 600;
+.Skill-sublist .Skill-Details div ion-icon {
+  font-size: 65px;
+  margin-left: 25%;
+  margin-top: 25%;
+}
+
+.Skill-sublist .Skill-Details div p {
+  font-size: 15px;
   color: black;
+  font-weight: 700;
 }
 
-.Skill-sublist a:hover {
-  color: #14be14;
-}
-
-.Skill-sublist ion-icon {
-  font-size: 35px;
-  padding-bottom: 15px;
+.Skill-sublist .Skill-Details div a {
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
 .Portfolio-container {
@@ -249,12 +255,6 @@ nav ion-icon, nav i {
 
 /* Footer and mobile settings */
 @media (max-width: 480px) {
-  #PcPic {
-    display: none;
-  }
-  #MobilePic {
-    display: block;
-  }
   #ContactBtn {
     display: block;
   }
@@ -282,6 +282,8 @@ nav ion-icon, nav i {
     margin-top: 25%;
   }
   .Skill-sublist {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
     margin-top: 30%;
   }
   .Skill-sublist ion-icon {
@@ -289,6 +291,9 @@ nav ion-icon, nav i {
   }
   .Skill-sublist a {
     font-size: 15px;
+  }
+  .Skill-sublist p {
+    font-size: 10px;
   }
   .Portfolio-container {
     margin-top: 55%;
