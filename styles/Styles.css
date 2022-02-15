@@ -148,55 +148,54 @@ nav ion-icon, nav i {
 .SkillsPortSection {
   padding-bottom: 200px;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  display: none;
 }
 
-.SP-Container {
+.SkillsPortSection .Skill-list {
   margin: auto;
-  margin-top: 5%;
-}
-
-.Skill-list {
+  margin-top: 10%;
   width: 90%;
-  margin: auto;
-}
-
-.Skill-list h2 {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.Skill-sublist {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  gap: 55px;
-  margin-top: 5%;
-}
-
-.Skill-sublist .Skill-Details {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
-}
-
-.Skill-sublist .Skill-Details div ion-icon {
-  font-size: 65px;
-  margin-left: 25%;
-  margin-top: 25%;
-}
-
-.Skill-sublist .Skill-Details div p {
-  font-size: 15px;
+.SkillsPortSection .Skill-list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black;
-  font-weight: 700;
-}
-
-.Skill-sublist .Skill-Details div a {
-  font-size: 2em;
   text-decoration: none;
-  color: black;
-  font-weight: 700;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.SkillsPortSection .Skill-list a ion-icon {
+  font-size: 1.9em;
+}
+
+.SkillsPortSection .Skill-list a:hover {
+  font-size: 1.7em;
+  color: orangered;
+}
+
+.SkillsPortSection .Skill-list a:hover ion-icon {
+  font-size: 2.1em;
 }
 
 .Portfolio-container {
@@ -208,36 +207,16 @@ nav ion-icon, nav i {
   margin: 30px;
 }
 
-.Portfolio-list {
+.Portfolio-container .Portfolio-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (20%)[5];
-      grid-template-columns: repeat(5, 20%);
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
 }
 
-.Portfolio-list div {
-  height: 150px;
-}
-
-.Portfolio-list div img {
-  width: 100%;
-  height: 150px;
-}
-
-.Portfolio-list .soon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.SkillsPortSection {
-  display: none;
+.Portfolio-container .Portfolio-list div {
+  border: 1px solid black;
+  height: 250px;
 }
 
 /* Desactivated stuff */
@@ -254,7 +233,7 @@ nav ion-icon, nav i {
 }
 
 /* Footer and mobile settings */
-@media (max-width: 480px) {
+@media (max-width: 850px) {
   #ContactBtn {
     display: block;
   }
@@ -279,37 +258,24 @@ nav ion-icon, nav i {
         grid-template-columns: 100%;
   }
   .Skill-list {
-    margin-top: 25%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .Skill-sublist {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    margin-top: 30%;
-  }
-  .Skill-sublist ion-icon {
-    font-size: 25px;
-  }
-  .Skill-sublist a {
-    font-size: 15px;
-  }
-  .Skill-sublist p {
-    font-size: 10px;
+  .Skill-list a {
+    font-size: 18px !important;
   }
   .Portfolio-container {
-    margin-top: 55%;
-    text-align: center;
+    margin-top: 15%;
   }
   .Portfolio-list {
-    -ms-grid-columns: (50%)[2];
-        grid-template-columns: repeat(2, 50%);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2] !important;
+        grid-template-columns: repeat(2, 50%) !important;
   }
-  .ContactSec {
-    width: 100%;
-    padding-bottom: 200px;
-  }
-  .ContactSec .ContactContent {
-    width: inherit;
-    margin-top: 30%;
+  .ContactContent {
+    margin-top: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -320,9 +286,13 @@ nav ion-icon, nav i {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 100px;
+    gap: 50px;
   }
-  .ContactSec .ContactContent a {
+  .ContactContent a {
+    font-size: 2em;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -330,15 +300,13 @@ nav ion-icon, nav i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: inherit;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    gap: 10px;
-    text-decoration: none;
-    background: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
   }
-  .ContactSec .ContactContent ion-icon, .ContactSec .ContactContent i {
-    font-size: 70px;
+  .ContactContent a:hover {
+    color: orangered;
   }
 }
 /*# sourceMappingURL=Styles.css.map */

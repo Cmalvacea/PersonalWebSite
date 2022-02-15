@@ -24,10 +24,10 @@
             <a href="#" is="ColorSwitch">Christopher</a>
         </div>
         <div class="Nav-Guide">
-            <a href="#" id="HomeBtn" onclick="PageSwap(HomeSec, AboutSec, SkillSec)">Home</a>
-            <a href="#" id="AboutBtn">About Me</a>
-            <a href="#" id="SkillBtn">Skills</a>
-            <a href="#" id="ContactBtn">Contact</a>
+            <a href="#" id="HomeBtn" onclick="PageReader(HomeSec)">Home</a>
+            <a href="#" id="AboutBtn" onclick="PageReader(AboutSec)">About Me</a>
+            <a href="#" id="SkillBtn" onclick="PageReader(SkillSec)">Skills</a>
+            <a href="#" id="ContactBtn" onclick="PageReader(ContactSec)">Contact</a>
         </div>
         <div class="WorkNets">
             <a href="https://github.com/Cmalvacea" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
@@ -46,9 +46,9 @@
                     <img src="images/ProfilePic.png" alt="" srcset="">
                 </div>
                 <h1>Christopher Malvacea</h1>
-                <p>The Website you need in the moment you need it</p>
+                <p>The project you need in the moment you need it</p>
                 <div>
-                    <a href="#" id="AboutBtn2"><button>Know More</button></a>
+                    <a href="#" id="AboutBtn2" onclick="PageReader(AboutSec)"><button>Know More</button></a>
                 </div>
             </div>
 
@@ -61,96 +61,39 @@
                 </div>
                 <div>
                     <h2>Good practices make good apps</h2>
-                    <p>Hello there! As you can see my name is Christopher Malvacea, i am a web developer, specifically with the MERN stack. I've been learning this really cool profession since a months ago. When it comes to make code my philosophy is always make readable and reliable code, always following the good practices in order to make the software scalable and easily adapted to any of your needs. Check my portfolio on the next page oh and by the way, there in the navegation bar are some of the places where you can contact me</p>
+                    <p>Hello there! As you can see my name is Christopher Malvacea, i am a programmer with skills and experience in Web Development(MERN/MEVN), Data Analytics and currently learning software development. I've been learning this really cool profession since a months ago. When it comes to make code my philosophy is always make readable and reliable code, always following the good practices in order to make the software scalable and easily adapted to any of your needs. Check my portfolio on the next page oh and by the way, there in the navegation bar are some of the places where you can contact me</p>
                     <br>
-                    <p>In my portfolio you will find some of my personal projects and some programs that i made just for practice. I'm currently studying big data so as you can guess i really like to make databases and software to store information, however my knowledge is not limited to that, pick a project from any of the sections in the Skill tab and you will understand what do i mean. There is a lot to say but i prefer to act inmediatly, if you like my portfolio, please feel free to contact me, i'll really appreciate it</p>
+                    <p>In my portfolio you will find some of my personal projects and some programs that i made just for practice. I'm currently studying software and blockchain development so as you can guess i really like to make databases and software to store information, however my knowledge is not limited to that, pick a project from any of the sections in the Skill tab and you will understand what do i mean. There is a lot to say but i prefer to act inmediatly, if you like my portfolio, please feel free to contact me, i'll really appreciate it</p>
                 </div>
             </div>
         </div>
 
         <div class="SkillsPortSection" id="SkillSec">
-            <div class="SP-Container">
-
-                <div class="Skill-list">
-                    <h2>Skills</h2>
-                    <div class="Skill-sublist">
-                        <div class="Skill-Details">
-                            <div>
-                                <ion-icon name="code-slash-outline"></ion-icon>
-                            </div>
-                            <div>
-                                <a href="#FrontendSec">Front-End</a>
-                                <p>My first steps in programming were with HTML, Css and Javascript making really basic websites, i currently work with React, Vue for frontend functionalities along with Scss/Sass for designing according to the client requirements</p>
-                            </div>
-                        </div>
-                        <div class="Skill-Details">
-                            <div>
-                                <ion-icon name="file-tray-stacked-outline"></ion-icon>
-                            </div>
-                            <div>
-                                <a href="#BackendSec">Back-End</a>
-                                <p>I have knowledge in backend libraries, enviroments and frameworks like Next, Express, Node, Gatsby among others. </p>
-                            </div>
-                        </div>
-                        <div class="Skill-Details">
-                            <div>
-                                <ion-icon name="server-outline"></ion-icon>
-                            </div>
-                            <div>
-                                <a href="#DatabaseSec">Database</a>
-                                <p>I am experienced in the implementation of NoSQL databases like MongoDB along with libraries to make their functionality easier to read, edite and recreate</p>
-                            </div>
-                        </div>
-                        <div class="Skill-Details">
-                            <div>
-                                
-                            </div>
-                            <div>
-                                <h1>In process...</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="Portfolio-container" id="FrontendSec">
-                    <h2>Front-End projects</h2>
-                    <div class="Portfolio-list">
-                        <div><a href="https://cmalvacea.github.io/Tourism_Website_2/" target="_blank"><img src="images/Front-Projects/Front-End (1).jpg" alt="" srcset=""></a></div>
-                        <div><a href="https://cmalvacea.github.io/Libre_Albedrio_Website/" target="_blank"><img src="images/Front-Projects/Front-End (2).jpg" alt="" srcset=""></a></div>
-                        <div><a href="https://cmalvacea.github.io/React_Quiz/public/test.html" target="_blank"><img src="images/Front-Projects/Front-End (3).jpg" alt="" srcset=""></a></div>
-                        <div><a href="https://cmalvacea.github.io/Tourism_Website_1/" target="_blank"><img src="images/Front-Projects/Front-End (4).jpg" alt="" srcset=""></a></div>
-                        <div><a href="https://cmalvacea.github.io/React_News-Website/" target="_blank"><img src="images/Front-Projects/Front-End (5).jpg" alt="" srcset=""></a></div>
-                    </div>
-                </div>
-
-                <div class="Portfolio-container" id="BackendSec">
-                    <h2>Back-end projects</h2>
-                    <div class="Portfolio-list">
-                        <div>
-                            <a href="https://github.com/Cmalvacea/Login_System" target="_blank"><img src="images/Back-Projects/BackProject1.jpg" alt="" srcset=""></a>
-                        </div>
-                        <div class="soon">
-                            <h3>Coming soon...</h3>
-                        </div>
-                        <div class="soon">
-                            <h3>Coming soon...</h3>
-                        </div>
-                        <div class="soon">
-                            <h3>Coming soon...</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="Portfolio-container" id="DatabaseSec">
-                    <h2>Database projects</h2>
-                    <div class="Portfolio-list">
-                        <div>
-                            <a href="https://github.com/Cmalvacea/CRUD_App" target="_blank"><img src="images/Database-Projects/Database-Project.jpg" alt="" srcset=""></a>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="Skill-list">
+                <a href="#Web-dev"><ion-icon name="laptop-outline"></ion-icon>Web Development</a>
+                <a href="#Data-Any"><ion-icon name="podium-outline"></ion-icon>Data Analytics</a>
+                <a href="#Soft-dev"><ion-icon name="tv-outline"></ion-icon>Software Development</a>
             </div>
+    
+            <div class="Portfolio-container" id="Web-dev">
+                <h2>Web Development</h2>
+                <div class="Portfolio-list">
+                </div>
+            </div>
+
+            <div class="Portfolio-container" id="Data-Any">
+                <h2>Data Analytics</h2>
+                <div class="Portfolio-list">
+
+                </div>
+            </div>
+
+            <div class="Portfolio-container" id="Soft-dev">
+                <h2>Software Development</h2>
+                <div class="Portfolio-list">
+                </div>
+            </div>
+
         </div>
 
 
@@ -172,21 +115,20 @@
     <script src="https://kit.fontawesome.com/6ea9739295.js" crossorigin="anonymous"></script>
     <script>
 
+        const Pages = [HomeSec, AboutSec, SkillSec, ContactSec]
 
-        function PageReader(arg1, arg2, arg3, arg4, arg5) {
-            arg1.addEventListener('click', () => {
-                arg2.style.display = 'block'
-                arg3.style.display = 'none'
-                arg4.style.display = 'none'
-                arg5.style.display = 'none'
+        function PageReader(arg1) {
+            Pages.forEach((elem) => {
+                if(elem.id !== arg1.id) {
+                    elem.style.display = 'none'
+                } else {
+                    arg1.style.display = 'block'
+                }
             })
         }
 
-        PageReader(HomeBtn, HomeSec, AboutSec, SkillSec, ContactSec)
-        PageReader(AboutBtn, AboutSec, ContactSec, HomeSec, SkillSec)
-        PageReader(AboutBtn2, AboutSec, ContactSec, HomeSec, SkillSec)
-        PageReader(SkillBtn, SkillSec, AboutSec, ContactSec, HomeSec)
-        PageReader(ContactBtn, ContactSec, HomeSec, AboutSec, SkillSec)
+        
+
     </script>
 </body>
 </html>

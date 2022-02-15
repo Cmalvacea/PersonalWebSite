@@ -155,94 +155,65 @@ nav {
 .SkillsPortSection {
     padding-bottom: 200px;
     font-family: $MontSerrat;
-}
+    width: 100%;
+    display: none;
 
-.SP-Container {
-    margin: auto;
-    margin-top: 5%;
-}
-
-.Skill-list {
-    width: 90%;
-    margin: auto;
-
-    h2 {
+    .Skill-list {
+        margin: auto;
+        margin-top: 10%;
+        width: 90%;
         text-align: center;
-    }
-}
-
-.Skill-sublist {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 55px;
-    margin-top: 5%;
-
-    .Skill-Details {
-        display: grid;
-        grid-template-columns: 30% 70%;
-
-        div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
 
             ion-icon {
-                font-size: 65px;
-                margin-left: 25%;
-                margin-top: 25%;
+                font-size: 1.9em;
             }
+        }
 
-            p {
-                font-size: 15px;
-                color: black;
-                font-weight: 700;
-            }
+        a:hover {
+            font-size: 1.7em;
+            color: orangered;
 
-            a{
-                font-size: 2em;
-                text-decoration: none;
-                color: black;  
-                font-weight: 700;
+            ion-icon {
+                font-size: 2.1em;
             }
         }
     }
 
 }
+
 
 
 
 .Portfolio-container {
     margin-top: 8%;
-
-
     h2 {
         font-size: 25px;
         margin: 30px;
     }
-}
 
-.Portfolio-list {
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-}
-
-.Portfolio-list {
-    div {
-        height: 150px;
-
-        img {
-            width: 100%;
-            height: 150px;
+    .Portfolio-list {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        
+        div {
+            border: 1px solid black;
+            height: 250px;
         }
     }
-
-    .soon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
-.SkillsPortSection {
-    display: none;
-}
+
 
 /* Desactivated stuff */
 
@@ -264,7 +235,7 @@ nav {
 
 
 
-@media(max-width: 480px)  {
+@media(max-width: 850px)  {
 
 
     #ContactBtn {
@@ -297,63 +268,46 @@ nav {
     }
 
     .Skill-list {
-        margin-top: 25%;
-    }
-
-    .Skill-sublist {
-        grid-template-columns: 100%;
-        margin-top: 30%;
-
-        ion-icon {
-            font-size: 25px;
-        }
+        justify-content: space-between;
 
         a {
-            font-size: 15px;
-        }
+            font-size: 18px !important;
 
-        p {
-            font-size: 10px;
         }
     }
 
     .Portfolio-container {
-        margin-top: 55%;
-        text-align: center;
+        margin-top: 15%;
     }
 
     .Portfolio-list {
-        grid-template-columns: repeat(2, 50%);
+        display: grid;
+        grid-template-columns: repeat(2, 50%) !important;
     }
 
-    .ContactSec {
-        width: 100%;
-        padding-bottom: 200px;
+    .ContactContent {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
 
-        .ContactContent {
-            width: inherit;
-            margin-top: 30%;
+        a {
+            font-size: 2em;
+            text-decoration: none;
+            font-family: $MontSerrat;
+            color: black;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 100px;
+            font-weight: bold;
+        }
 
-            a {
-                display: flex;
-                flex-direction: column;
-                text-align: inherit;
-                font-family: $MontSerrat;
-                font-weight: 800;
-                gap: 10px;
-                text-decoration: none;
-                background: none;
-            }
-
-            ion-icon, i {
-                font-size: 70px;
-            }
+        a:hover {
+            color: orangered;
         }
     }
+
 
     
 }
