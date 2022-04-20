@@ -214,9 +214,8 @@ nav ion-icon, nav i {
       grid-template-columns: repeat(4, 25%);
 }
 
-.Portfolio-container .Portfolio-list div {
-  border: 1px solid black;
-  height: 250px;
+.Portfolio-container .Portfolio-list div img {
+  width: 100%;
 }
 
 /* Desactivated stuff */

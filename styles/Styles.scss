@@ -207,8 +207,10 @@ nav {
         grid-template-columns: repeat(4, 25%);
         
         div {
-            border: 1px solid black;
-            height: 250px;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
